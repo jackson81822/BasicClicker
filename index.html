@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My First HTML Page v2.3</title>
-    <!-- Added .addclicks command, remember to update th reset button-->
+    <title>My First HTML Page v2.4</title>
+    <!-- fixed minor error with the .setclicks function. remember to update th reset button-->
   </head>
   <body>
     <h1>Hello, World!</h1>
@@ -32,7 +32,7 @@
    <!-- SCRIPT STUFF STARTS HERE --> 
     <script>
       let count = 0;
-      let x = 1;
+      let x = 10000000000000;
       let aocmpc = 1;
       let confirmreset = null;
       let cps = 0;
@@ -106,9 +106,8 @@
         <!-- .setclicks=xxx -->
       	if (command.startsWith(".setclicks=")) {
         	var newcommand = parseInt(command.split("=") [1])
-          var command = newcommand;
-          count = command;
-          document.getElementById("counter").textContent = "Count:" + count;
+          count = newcommand;
+          document.getElementById("counter").textContent = "Count: " + count;
           
         }
         <!-- .addclicks=xxx -->
@@ -127,38 +126,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
